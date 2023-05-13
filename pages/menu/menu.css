@@ -1,4 +1,68 @@
+main{
+  --card-transition-speed: 0.2s;
+}
+
 .category-card{
   height: 200px;
-  background-color: lightgray;
+  line-height: 200px;
+
+  background-color: darkgray;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-duration: var(--card-transition-speed);
+}
+
+.category-card:hover{
+  scale: 1.3;
+}
+
+#appetizers-card{
+  background-image: url("../../assets/images/appetizers-bg.jpg");
+  background-color: #777;
+}
+
+#pizza-card{
+  background-image: url("../../assets/images/pizza-bg.jpg");
+}
+
+#drinks-card{
+  background-image: url("../../assets/images/drinks-bg.jpg");
+}
+
+#pasta-card{
+  background-image: url("../../assets/images/pasta-bg.jpg");
+}
+
+.card-link{
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.card-link:hover{
+  color: white;
+}
+
+.card-link h3{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 20pt;
+  letter-spacing: 1px;
+  line-height: inherit;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition-duration: var(--card-transition-speed);
+
+  pointer-events: none;
+}
+.card-link:hover h3{
+  letter-spacing: 4px;
 }
