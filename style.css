@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Roboto+Slab&display=swap');
 html, body{
   margin: 0;
   padding: 0;
 }
 
 html{
+  /* Length Vars */
   --navbar-height: 90px;
   --footer-height: 40px;
+
+  /* Color Vars */
+  --text-muted: #888;
 }
 
 body{
@@ -48,4 +51,9 @@ footer{
   height: var(--footer-height);
   line-height: var(--footer-height);
   color: white;
+}
+
+/* REUSABLE CLASSES */
+.muted {
+  color: var(--text-muted);
 }

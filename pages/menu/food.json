@@ -1,0 +1,78 @@
+{
+  "appetizers":[
+    {
+      "name": "Caprese A Modo",
+      "description": "Fresh and smoked buffalo mozzarella, fresh tomatoes and carrots with vinaigrette sauce",
+      "price": 135
+    },{
+      "name": "INSALATA MISTA",
+      "description": "Lettuce, arugula, mushrooms, bell peppers, cucumber, tomatoes and carrots with vinaigrette sauce",
+      "price": 115
+    },{
+      "name": "TARTARE DI SALMONE",
+      "description": "Chopped salmon marinated with lemon and olive oil served with apples, onions, cucumbers, tomatoes, garlic and fresh dill",
+      "price": 150
+    },{
+      "name": "FRITTURA ALL'ITALIANA",
+      "description": "Fried calamari, shrimps, carrots and zucchini served with tartare sauce",
+      "price": 160
+    }
+  ],
+  "pizza":[
+    {
+      "name": "VEGETARIANA",
+      "description": "Tomatoes, mozzarella, zucchini, eggplant, bell peppers, mushrooms",
+      "price": 125
+    },{
+      "name": "MARI E MONTI",
+      "description": "Tomatoes, mozzarella, mushrooms, shrimps, basil",
+      "price": 185
+    },{
+      "name": "QUATTRO FORMAGG",
+      "description": "Tomatoes, mozzarella, smoked cheese, Gorgonzola, provolone cheese",
+      "price": 145
+    },{
+      "name": "CAPRICCIOSA",
+      "description": "Tomatoes, mozzarella, mushrooms, beef salami, olives, grilled bell peppers, basil",
+      "price": 145
+    }
+  ],
+  "pasta":[
+    {
+      "name": "FETTUCCINE ALFREDO CON POLLO E FUNGHI",
+      "description": "Fettuccine pasta with butter, cream, Grana Padano cheese, chicken, mushrooms, garlic, onions and basil",
+      "price": 145
+    },{
+      "name": "PENNE ALL’ARRABBIATA",
+      "description": "Pasta with garlic, chili, parsley and tomato sauce",
+      "price": 125
+    },{
+      "name": "LASAGNA AL FORNO",
+      "description": "Traditional baked lasagna with bolognese and béchamel sauce, mozzarella, Parmigiano, Grana Padano cheese",
+      "price": 145
+    },{
+      "name": "RISOTTO AI FUNGHI",
+      "description": "Italian rice with onions, garlic, butter, mushrooms and Grana Padano cheese",
+      "price": 145
+    },{
+      "name": "LINGUINE AI FRUTTI DI MARE",
+      "description": "Pasta with calamari, shrimps, salmon, sea bass, garlic and tomato sauce",
+      "price": 220
+    }
+  ],
+  "dessert":[
+    {
+      "name": "MACEDONIA DI FRUTTA FRESCA",
+      "description": "Seasonal fresh fruit salad",
+      "price": 95
+    },{
+      "name": "PANNA COTTA AL PISTACCHIO",
+      "description": "Pistachio flavoured pannacotta",
+      "price": 105
+    },{
+      "name": "Cassata",
+      "description": "Cassata ice cream served with red fruit sauce",
+      "price": 95
+    }
+  ]
+}
