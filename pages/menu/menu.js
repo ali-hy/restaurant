@@ -1,5 +1,6 @@
 /**
  * @typedef {{
+ * image?: string;
  * name: string;
  * description: string;
  * price: number;
@@ -9,7 +10,59 @@
  * @type {NodeListOf<HTMLTableElement}
  */
 const tables = document.querySelectorAll('ul.menu-items');
+/**
+ * @type {NodeListOf<HTMLDivElement>}
+ */
+const categoryCardContainers = document.querySelectorAll('.category-card-container');
+/**
+ * @type {NodeListOf<HTMLDivElement>}
+ */
+const menuSections = document.querySelectorAll('.menu-section');
+menuSections.forEach(section => {
+  section.style.display = "none";
+});
 
+/**
+ * @param {HTMLDivElement} section 
+ */
+function hideCategorySection(){
+  menuSections.forEach(section => {
+    if(section.style.display==="block"){
+      section.style.display = "none";
+      section.classList.remove("show");
+    }
+  });
+}
+
+/**
+ * @param {HTMLDivElement} section 
+ */
+function startSectionTranstion(section){
+  setTimeout(() => section.classList.add("show"), 0);
+}
+
+/**
+ * @param {HTMLDivElement} section 
+ */
+function showCategorySection(section){
+  section.style.display = "block";
+  startSectionTranstion(section);
+}
+
+/**
+ * @param {MouseEvent} e 
+ */
+function handleCardClick(e){
+  const card = e.currentTarget;
+  const target = document.querySelector(card.dataset.targetSection);
+
+  hideCategorySection();
+  showCategorySection(target);
+}
+
+categoryCardContainers.forEach(card => {
+  card.addEventListener('click', handleCardClick);
+})
 
 /**
  * @param {MenuItem} item
@@ -18,6 +71,8 @@ const tables = document.querySelectorAll('ul.menu-items');
 function menuItemToListItem(item){
   const row = document.createElement("li");
   row.classList.add("menu-item")
+
+    // const itemImage = item.image ?? null;
 
     const itemName = document.createElement("h6");
     itemName.classList.add("item-name");
@@ -46,7 +101,6 @@ async function loadFood() {
    * @type {Record<string, MenuItem[]}
    */
   let food = await fetch("./food.json").then(response => response.json());
-  console.log(food);
 
   for(let table of tables){
     const key = table.dataset.tableSource;

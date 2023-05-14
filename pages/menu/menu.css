@@ -39,19 +39,21 @@ main{
   background-image: url("../../assets/images/dessert-bg.jpg");
 }
 
-.card-link{
+.category-card-container{
   position: relative;
   display: block;
   color: white;
   text-decoration: none;
   overflow: hidden;
   border-radius: 20px;
+  cursor: pointer;
 }
-.card-link:hover{
+
+.category-card-container:hover{
   color: white;
 }
 
-.card-link h3{
+.category-card-container h3{
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -68,20 +70,30 @@ main{
   pointer-events: none;
 }
 
-.card-link:hover h3{
+.category-card-container:hover h3{
   letter-spacing: 4px;
 }
 
-section{
+.menu-section{
+  margin-top: 20px;
   padding: 20px;
   border-radius: 20px;
+
+  transition: 0.3s;
+  opacity: 0;
+  scale: 0.6;
 }
 
-section:nth-child(odd){
+.menu-section.show{
+  opacity: 1;
+  scale: 1;
+}
+
+.menu-section:nth-child(odd){
   background: #ddd;
 }
 
-section h2{
+.menu-section h2{
   margin-bottom: 14px;
 }
 
