@@ -15,7 +15,7 @@ const tables = document.querySelectorAll('ul.menu-items');
  * @param {MenuItem} item
  * @returns {HTMLTableRowElement}
  */
-function menuItemToTableRow(item){
+function menuItemToListItem(item){
   const row = document.createElement("li");
   row.classList.add("menu-item")
 
@@ -51,7 +51,7 @@ async function loadFood() {
   for(let table of tables){
     const key = table.dataset.tableSource;
     if(key !== undefined){
-      const rows = food[key].map(menuItemToTableRow);
+      const rows = food[key].map(menuItemToListItem);
       rows.forEach(row =>{
         table.appendChild(row);
       });
