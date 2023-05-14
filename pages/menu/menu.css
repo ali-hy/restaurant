@@ -35,6 +35,10 @@ main{
   background-image: url("../../assets/images/pasta-bg.jpg");
 }
 
+#dessert-card{
+  background-image: url("../../assets/images/dessert-bg.jpg");
+}
+
 .card-link{
   position: relative;
   display: block;
@@ -63,6 +67,37 @@ main{
 
   pointer-events: none;
 }
+
 .card-link:hover h3{
   letter-spacing: 4px;
+}
+
+section{
+  padding: 20px;
+  border-radius: 20px;
+}
+
+section:nth-child(odd){
+  background: #ddd;
+}
+
+section h2{
+  margin-bottom: 14px;
+}
+
+ul.menu-items{
+  list-style: none;
+  /* padding-left: 0; */
+}
+
+.item-name{
+  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.item-description{
+  font-style: italic;
+  width: 70%;
 }
