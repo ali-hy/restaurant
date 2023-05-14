@@ -1,29 +1,35 @@
-
 form {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  form input,
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+form input,
 form select {
   border: 1px solid #ccc;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-  input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-  p {
-    font-family: Apple Chancery, "cursive";
-  }
-  img
-  {
-    width: 12%;
-    height: auto;
-  }
-  h3{
-    font-family: Apple Chancery, "cursive";
-  }
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.img-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-img-container{
+  width: 12%;
+}
+
+.img-banner img {
+  width: 100%;
+}
+
+p,h3{
+  font-style: italic;
+}
