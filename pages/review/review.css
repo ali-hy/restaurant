@@ -6,3 +6,10 @@ h5{
     border: 1px solid black;
     padding: 5px;
   }
+  main img
+  {
+    width: 20%;
+    height: auto;
+    margin: auto;
+  }   
+ 
