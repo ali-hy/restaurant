@@ -70,33 +70,38 @@ categoryCardContainers.forEach(card => {
  */
 function menuItemToListItem(item){
   const row = document.createElement("li");
-  row.classList.add("menu-item")
+  row.classList.add("menu-item", "d-flex", "align-items-center", "mb-5", "mb-md-3");
 
     if(item.image !== undefined){
       const image = document.createElement("img");
       image.src = `/assets/images/menu-items/${item.image}`;
-      image.className = "rounded-circle"
+      image.className = "rounded-circle me-3"
       row.appendChild(image);
     }
 
-    const itemName = document.createElement("h6");
-    itemName.classList.add("item-name");
-    itemName.innerText = item.name;
+    const extraDiv = document.createElement("div");
+    extraDiv.className = "extra-div";
 
-    const itemBodyContainer = document.createElement("div");
-    itemBodyContainer.classList.add("d-flex", "justify-content-between");
-      const itemDescription = document.createElement("p");
-      itemDescription.classList.add("item-description", "text-muted");
-      itemDescription.innerText = item.description;
+      const itemName = document.createElement("h6");
+      itemName.classList.add("item-name");
+      itemName.innerText = item.name;
 
-      const priceCell = document.createElement("span");
-      priceCell.classList.add("item-price");
-      priceCell.innerText = item.price;
-    itemBodyContainer.appendChild(itemDescription);
-    itemBodyContainer.appendChild(priceCell);
+      const itemBodyContainer = document.createElement("div");
+      itemBodyContainer.classList.add("d-flex", "justify-content-between");
+        const itemDescription = document.createElement("p");
+        itemDescription.classList.add("item-description", "text-muted", "mb-0");
+        itemDescription.innerText = item.description;
 
-  row.appendChild(itemName);
-  row.appendChild(itemBodyContainer);
+        const priceCell = document.createElement("span");
+        priceCell.classList.add("item-price");
+        priceCell.innerText = item.price;
+      itemBodyContainer.appendChild(itemDescription);
+      itemBodyContainer.appendChild(priceCell);
+
+    extraDiv.appendChild(itemName);
+    extraDiv.appendChild(itemBodyContainer);
+  
+  row.appendChild(extraDiv);
 
   return row;
 }
