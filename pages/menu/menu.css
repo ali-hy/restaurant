@@ -99,7 +99,7 @@ main{
 
 ul.menu-items{
   list-style: none;
-  /* padding-left: 0; */
+  padding-left: 0;
 }
 
 .item-name{
@@ -109,7 +109,22 @@ ul.menu-items{
   margin-bottom: 2px;
 }
 
+.menu-item img{
+  width: 100px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.menu-section:nth-child(even) img{
+  border-color: gray;
+}
+
 .item-description{
   font-style: italic;
   width: 70%;
+}
+
+.extra-div{
+  flex: 1;
 }
