@@ -1,6 +1,7 @@
 {
   "appetizers":[
     {
+      "image": "caprese-a-modo-mio.jpg",
       "name": "Caprese A Modo",
       "description": "Fresh and smoked buffalo mozzarella, fresh tomatoes and carrots with vinaigrette sauce",
       "price": 135

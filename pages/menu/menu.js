@@ -72,7 +72,12 @@ function menuItemToListItem(item){
   const row = document.createElement("li");
   row.classList.add("menu-item")
 
-    // const itemImage = item.image ?? null;
+    if(item.image !== undefined){
+      const image = document.createElement("img");
+      image.src = `/assets/images/menu-items/${item.image}`;
+      image.className = "rounded-circle"
+      row.appendChild(image);
+    }
 
     const itemName = document.createElement("h6");
     itemName.classList.add("item-name");
