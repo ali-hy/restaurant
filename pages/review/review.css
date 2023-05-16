@@ -1,8 +1,33 @@
-h5{
-    font-family: Apple Chancery, "cursive";
-  }
-  p{
-    font-family: Apple Chancery, "cursive";
-    border: 1px solid black;
-    padding: 5px;
-  }
+.star-img, .star-img-sm{
+  width: 40px;
+  background-size: contain;
+  aspect-ratio: 1;
+
+  background-image: url("/assets/icons/star-empty.svg");
+}
+
+.star-img-sm{
+  width: 20px;
+}
+
+.star-img-sm{
+  background-image: url("/assets/icons/star-full.svg")
+}
+
+.star-img.full-star{
+  background-image: url("/assets/icons/star-full-colored.svg");
+}
+
+.review-list{
+  padding-left: 0;
+  list-style: none;
+}
+
+li.review{
+  border-bottom: 2px solid #ccc;
+  padding: 20px 10px;
+}
+
+li.review p{
+  margin-bottom: 5px;
+}
