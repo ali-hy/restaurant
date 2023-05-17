@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: aliceblue;
+    width: 100%;
+    position: fixed; 
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: #202020;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+
+
+}
+.navigation a{
+    color: #878686;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+
+}
+.navigation a:hover{
+    color: #303030;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: top;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+
+
+}
+.main h2{
+    color: gray;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: azure;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: azure;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color:azure;
+    background-color:#454545 ;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display:inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #303030 ;
+    transform: scale(1.1);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color:#454545;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom:30px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;/*to center my cards*/
+    flex-direction: row;/*row: beside each other, col: below each other vertically*/
+    flex-wrap: wrap;/* to stop cards from minimizing if I change window size*/
+}
+.card{
+    background-color: whitesmoke;
+    width: 35em;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%); /*shadow up or (-ve)down, shadow right or (-ve)left, shadow blurred area size, color of shadow(/opacity of shadow)*/
+    border-radius: 10px;
+    padding: 25px;/*distance between paragraphs and the box it's inside*/
+    margin: 15px;/*distance between cards*/
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color:#454545;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+/*You should center in .info first so the centering in the header work*/
+.info h3{
+    color: #454545;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin:10px;
+}
+.branch{
+    background-color: #202020;
+
+}
+.branch.content{     /*content only of content inside projects not all content class*/
+    margin-top: 30px;
+}
+.branch-card {
+    background-color:whitesmoke;
+    border: 1px solid whitesmoke; /*use border instead of shadow and choose a clor for it here,why? cuz the background is not ligh-color so shadows won't make a difference*/
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;      /*use overflow so it doesn't get out of the website*/
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.branch-card:hover {
+   transform: scale(1.1);
+}
+
+.branch-card:hover .branch-image {       /*.project-image, so only the div (the image) will kinda blur or become more transperent*/
+    opacity: 0.9;
+ }
+
+.branch-image img{    /* you'll find many examples up as the following one, here we wrote img cuz we need the imagesss inside the div*/
+    height: 250px ;
+    width: 100%   /*100 width so the img fits in the whole div*/
+}
+
+.branch-info {
+    padding: 1em;
+}
+
+.branch-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.branch-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #454545;
+}
+
+.more-details:hover {
+    color: #202020;
+}
