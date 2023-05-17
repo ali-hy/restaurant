@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="about-us.css">
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
   <title>Restaurant</title>
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="../home">
-        <img src="../../assets/icons/restaurant-logo.png" alt="">
-        Restraunt
+        <img src="/pages/about-us/images/fotor_2023-5-17_2_44_57.png" alt="">
+        Gusto Italiano
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,13 +43,92 @@
   </nav>
 
   <main>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <!-- Look at menu for reference on containers, rows and cols -->
+
+    <section class="main">
+      <div>
+        <h2><span>Gusto<br> Italiano</span> </h2>
+
+        <h3> Keep your friends close <br> and your pizza closer </h3>
+        <a href="#branch" class="main-btn">Find the nearest branch</a>
+      </div>
+
+    </section>
+    <section class="cards" id="story">
+      <h2 class="title">The origin</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-brands fa-slack"></i>
+          </div>
+          <div class="info">
+            <h3>Our Story</h3>
+            <p>In a picturesque town in Tuscany, a family embarked on a culinary adventure that would shape their
+              destiny. With a burning passion for Italian cuisine, they opened Gusto Italiano, a humble pizza place. Led
+              by the matriarch, Nonna Maria, and her secret recipes, Gusto Italiano quickly became renowned for its
+              delectable pizzas, inviting ambiance, and warm hospitality. Word spread like wildfire, drawing patrons
+              from far and wide, creating a legacy that celebrated the love and flavors of Italy for generations to
+              come.</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!--id is used for linking between web pages, go up in the code(#projects)-->
+    <section class="branch" id="branch">
+      <h2 class="title">You can find us in:</h2>
+      <div class="content">
+        <div class="branch-card">
+          <div class="branch-image">
+            <img src="/pages/about-us/images/napoli.jpg" />
+          </div>
+          <div class="branch-info">
+            <!--<p class="branch-category">Fried Chicken Restaurant</p>-->
+            <strong class="branch-title">
+              <span>Napoli, Italy</span>
+              <a href="https://www.google.com/maps/place/Naples,+Metropolitan+City+of+Naples,+Italy/@40.8536072,14.2430069,12z/data=!3m1!4b1!4m6!3m5!1s0x133b084f6a6c7e99:0x3df52cc13b78191d!8m2!3d40.8517983!4d14.26812!16zL20vMGZoc3o"
+                class="more-details">Visit</a>
+            </strong>
+          </div>
+        </div>
+        <div class="branch-card">
+          <div class="branch-image">
+            <img src="/pages/about-us/images/cairo.jpg" />
+          </div>
+          <div class="branch-info">
+            <!--<p class="branch-category">Fried Chicken Restaurant</p>-->
+            <strong class="branch-title">
+              <span>Cairo, Egypt</span>
+              <a href="https://www.google.com/maps/place/Cairo,+Cairo+Governorate/data=!4m2!3m1!1s0x14583fa60b21beeb:0x79dfb296e8423bba?sa=X&hl=en-GB&ved=2ahUKEwjBxIGgpPv-AhWQdKQEHT8zD2kQ8gF6BAgIEAI"
+                class="more-details">Visit</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="cards contact" id="contact">
+      <h2 class="title">Join our professional <br>staff and apply now!</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <img src="/pages/about-us/images/icons/support_agent_FILL0_wght400_GRAD0_opsz48.svg"/>
+          </div>
+          <div class="info">
+            <h3>Phone</h3>
+            <p>+393399957158</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="/pages/about-us/images/icons/send_FILL0_wght400_GRAD0_opsz48.svg"/>
+        </div>
+          <div class="info">
+            <h3>Email</h3>
+            <p>GustoItaliano@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="text-center">
@@ -56,4 +139,5 @@
   <script src="/scripts/popper.min.js"></script>
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
